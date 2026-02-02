@@ -1,0 +1,19 @@
+# UGA Nutrition App - Dependencies
+
+# Core Framework
+streamlit>=1.32.0
+
+# AI/LLM Integration
+groq>=0.4.0
+
+# Data Processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Utilities
+python-dotenv>=1.0.0
+
+# Optional: For enhanced features
+# pillow>=10.0.0  # For image processing (plate photo feature)
+# pytesseract>=0.3.10  # For OCR (nutrition label scanning)
+# requests>=2.31.0  # For API calls
