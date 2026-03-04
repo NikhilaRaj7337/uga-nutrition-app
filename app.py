@@ -19,6 +19,10 @@ import tempfile
 DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".app_data")
 AGENT_PASSWORD_HASH = hashlib.sha256("GoDawgs@2026".encode()).hexdigest()
 
+os.system("apt-get update")
+os.system("apt-get install -y libgl1-mesa-glx")
+os.system("apt-get install -y libglib2.0-0")
+
 
 def verify_agent_password(password: str) -> bool:
     candidate_hash = hashlib.sha256(password.encode()).hexdigest()
